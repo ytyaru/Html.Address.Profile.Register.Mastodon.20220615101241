@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head prefix="og: https://ogp.me/ns# article: https://ogp.me/ns/article#">
+<meta charset="utf-8">
+<title>アドレスとプロフィールを登録する</title>
+<meta name="description" content="誰が誰だかわかりやすくするために。">
+<meta name="author" content="ytyaru">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">
+<link rel="icon" href="assets/image/avator.png">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/toot-dialog.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="ytyaru" />
+<meta property="og:title" content="アドレスとプロフィールを登録する" />
+<meta property="og:description" content="誰が誰だかわかりやすくするために。" />
+<meta property="og:image" content="https://ytyaru.github.io/Html.Misskey.RedirectCallback.Event.20220612182913/asset/image/eye-catch.png" />
+<meta property="article:published_time" content="2022-06-13T12:50:00+09:00" />
+<meta property="article:author" content="https://ytyaru.github.io/" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "ytyaru",
+      "url": "https://ytyaru.github.io/",
+      "sameAs": [
+        "https://twitter.com/ytyaru1",
+        "https://github.com/ytyaru",
+        "https://profile.hatena.ne.jp/ytyaru/",
+        "https://mstdn.jp/@ytyaru",
+        "https://pawoo.net/@ytyaru_pawoo",
+        "https://www.pixiv.net/users/53831310",
+        "https://monaledge.com/user/MEHCqJbgiNERCH3bRAtNSSD9uxPViEX1nu",
+        "https://web3.askmona.org/user/1590",
+        "https://misskey.io/@ytyaru",
+        "https://misskey.dev/@ytyaru",
+        "https://sushi.ski/@ytyaru",
+        "https://meisskey.one/@ytyaru",
+      ]
+    },
+    "dateModified": "2022-06-13T12:50:00+09:00",
+    "datePublished": "2022-06-13T12:50:00+09:00",
+    "headline": "アドレスとプロフィールを登録する",
+    "image": ["https://ytyaru.github.io/Html.Misskey.RedirectCallback.Event.20220612182913/asset/image/eye-catch.png"]
+  }
+</script>
+<link rel="webmention" href="https://webmention.io/ytyaru.github.io/webmention" />
+<link rel="pingback" href="https://webmention.io/ytyaru.github.io/xmlrpc" />
+<link rel="me" href="https://twitter.com/ytyaru1">
+<link rel="me" href="https://mstdn.jp/@ytyaru">
+<link rel="me" href="https://pawoo.net/@ytyaru_pawoo">
+<link rel="me" href="https://misskey.io/@ytyaru">
+<link rel="me" href="https://misskey.dev/@ytyaru">
+<link rel="me" href="https://github.com/ytyaru">
+<link rel="me" href="https://profile.hatena.ne.jp/ytyaru/">
+<link rel="me" href="https://ytyaru.hatenablog.com/">
+<link rel="me" href="https://www.pixiv.net/users/53831310">
+<link rel="me" href="https://monaledge.com/user/MEHCqJbgiNERCH3bRAtNSSD9uxPViEX1nu">
+<link rel="me" href="https://web3.askmona.org/user/1590">
+<link rel="me" href="https://misskey.io/@ytyaru">
+<link rel="me" href="https://misskey.dev/@ytyaru">
+<link rel="me" href="https://sushi.ski/@ytyaru">
+<link rel="me" href="https://meisskey.one/@ytyaru">
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="./lib/tingle/0.16.0/tingle.js"></script>
+<link rel="stylesheet" href="./lib/tingle/0.16.0/tingle.css">
+<!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">-->
+<link rel="stylesheet" type="text/css" href="./lib/toastify/1.11.2/min.css">
+<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>-->
+<script type="text/javascript" src="./lib/toastify/1.11.2/min.js"></script>
+<script src="js/toaster.js"></script>
+<script src="js/rest-client.js"></script>
+<script src="js/misskey-rest-client.js"></script>
+<script src="js/misskey-instance.js"></script>
+<script src="js/misskey-authorizer.js"></script>
+<script src="js/misskey-authorizer-oauth.js"></script>
+<script src="js/misskey-authorizer-miauth.js"></script>
+<script src="js/misskey-api-client.js"></script>
+
+<script src="js/misskey-note-button.js"></script>
+<script src="js/misskey-note-dialog.js"></script>
+<!--
+-->
+<script src="js/webmention-requester.js"></script>
+
+<script src="js/mastodon-rest-client.js"></script>
+<script src="js/mastodon-authorizer.js"></script>
+<script src="js/mastodon-api-client.js"></script>
+<!--<script src="js/tooter.js"></script>-->
+<script src="js/toot-button.js"></script>
+<script src="js/toot-dialog.js"></script>
+<!--
+-->
+<script src="js/comment.js"></script>
+<script src="js/tweet-button.js"></script>
+<script src="js/mention-section.js"></script>
+<script src="js/mpurse-send-button.js"></script>
+
+<script src="js/mastodon-instance.js"></script>
+<script src="js/mastodon-profile-generator.js"></script>
+<script src="js/misskey-profile-generator.js"></script>
+
+<script src="js/mastodon-redirect-callback-reciver.js"></script>
+<script src="js/misskey-redirect-callback-reciver.js"></script>
+
+<script src="js/main.js"></script>
+</head>
+<body>
+<h1>アドレスとプロフィールを登録する</h1>
+<p>　誰が誰だかわかりやすくするために。</p>
+<form><fieldset>
+    <legend>プロフィール</legend>
+    <table>
+    <tr><th>アドレス</th><td><input id="address" value="" placeholder="モナコインのアドレス"></td></tr>
+    <tr><th>URL</th><td><input id="url" value="" placeholder="https://your.site/"></td></tr>
+    <tr><th>名前</th><td><input id="name" value="" placeholder="あなたの表示名"></td></tr>
+    <tr><th>画像</th><td><input id="avatar" value="" placeholder="https://your.site/avatar.png"></td></tr>
+    <tr><th>紹介</th><td><textarea id="description" value="" placeholder="私はこういう者です。"></textarea></td></tr>
+    <tr><th>補足情報</th>
+        <td>
+        <table>
+            <tr><td><input id="field-1-key" placeholder="項目名"></td><td><input id="field-1-value" placeholder="値"></td></tr>
+            <tr><td><input id="field-2-key" placeholder="項目名"></td><td><input id="field-2-value" placeholder="値"></td></tr>
+            <tr><td><input id="field-3-key" placeholder="項目名"></td><td><input id="field-3-value" placeholder="値"></td></tr>
+            <tr><td><input id="field-4-key" placeholder="項目名"></td><td><input id="field-4-value" placeholder="値"></td></tr>
+        </table>
+        </td>
+    </tr>
+    </table>
+    <div><h3>Mastodon</h3>
+        <div id="mastodon-accounts"></div>
+        <button id="get-mastodon-account-info" type="button">＋</button><label><input id="mastodon-instance" value="" placeholder="mstdn.jp" list="mastodon-instance-candidate" autocomplete="on">：マストドン・インスタンスのドメイン名またはURL</label>
+        <datalist id="mastodon-instance-candidate">
+            <option value="mstdn.jp">mstdn.jp</option>
+            <option value="pawoo.net">pawoo.net</option>
+        </datalist>
+    </div>
+    <div><h3>Misskey</h3>
+        <div id="misskey-accounts"></div>
+        <button id="get-misskey-account-info" type="button">＋</button><label><input id="misskey-instance" value="" placeholder="misskey.io" list="misskey-instance-candidate" autocomplete="on">：ミスキー・インスタンスのドメイン名またはURL</label>
+        <datalist id="misskey-instance-candidate">
+            <option value="misskey.io">misskey.io</option>
+            <option value="misskey.dev">misskey.dev</option>
+            <option value="sushi.ski">sushi.ski</option>
+            <option value="meisskey.one">meisskey.one</option>
+        </datalist>
+    </div>
+    <br>
+    <button id="regist" type="button">登録する</button>
+</fieldset></form>
+
+<!--
+<output id="export-mastodon"></output>
+
+<form>
+    <fieldset>
+    <legend>アカウント情報を取得する</legend>
+    <label>ミスキー・インスタンスのドメイン名またはURL：<input id="misskey-instance" value="" placeholder="misskey.io" list="misskey-instance-candidate" autocomplete="on"></label>
+    <datalist id="misskey-instance-candidate">
+        <option value="misskey.io">misskey.io</option>
+        <option value="misskey.dev">misskey.dev</option>
+        <option value="sushi.ski">sushi.ski</option>
+        <option value="meisskey.one">meisskey.one</option>
+    </datalist>
+    <button id="get-misskey-account-info" type="button">認証してアカウント情報を取得する</button>
+    </fieldset>
+</form>
+<output id="export-misskey"></output>
+-->
+<h2>経緯</h2>
+<table>
+<tr><th></th><th>Mastodon</th><th>Misskey</th></tr>
+<tr><th>投稿ボタン</th><td><a href="https://ytyaru.github.io/Html.Mastodon.Toot.Button.Dialog.WebComponent.Mpurse.Webmention.Requester.20220610112921/" target="_blank" rel="noopener noreferrer">※</a></th><td><a href="https://ytyaru.github.io/Html.Misskey.Note.Button.Dialog.WebComponent.Webmention.20220609193648/" target="_blank" rel="noopener noreferrer">※</a></td></tr>
+<tr><th>プロフィール取得</th><td><a href="https://ytyaru.github.io/Html.Mastodon.Account.Info.20220611094830/"  target="_blank" rel="noopener noreferrer">※</a></th><td><a href="https://ytyaru.github.io/Html.Misskey.Account.Info.20220611155603/"  target="_blank" rel="noopener noreferrer">※</a></td></tr>
+<tr><th>イベント化</th><td><a href="https://ytyaru.github.io/Html.Mastodon.RedirectCallback.Event.20220612141935/"  target="_blank" rel="noopener noreferrer">※</a></td><td><a href="https://ytyaru.github.io/Html.Misskey.RedirectCallback.Event.20220612182913/"  target="_blank" rel="noopener noreferrer">※</a></td></tr>
+</table>
+<h2>プロフィールからの投げモナボタンについて</h2>
+<p>　少なくとも以下のうちいずれかひとつの条件を満たせば、投げモナボタンを表示する。</p>
+<ul>
+<li>プロフィールの中にmpurseのアドレスらしき文字列がある</li>
+<li>プロフィール補足情報のラベルが「モナコイン」または「MONACOIN」であり、かつその値がmpurseのアドレスらしき文字列である</li>
+</ul>
+<p>「mpurseのアドレスらしき文字列」とは最初にみつけた34字以上の連続した英数字である。（正規表現「/[a-zA-Z0-9]{34,}/g」）</p>
+
+
+<footer><a href="https://ytyaru.github.io/" title="著者"><img src="./asset/image/avator.png" width="64" height="64">ytyaru</a><mpurse-send-button to="MEHCqJbgiNERCH3bRAtNSSD9uxPViEX1nu" img="coin-monar"></mpurse-send-button><a href="https://ytyaru.github.io/Html.Mpurse.Api.20220517160403/setup.html" title="モナコインを使うには">？</a></footer>
+
+<tweet-button text="いいね！\n"></tweet-button>
+<toot-dialog domain="mstdn.jp pawoo.net" status="いいね！"></toot-dialog>
+<misskey-note-dialog domain="misskey.io misskey.dev" status="いいね！"></misskey-note-dialog>
+<mention-section></mention-section>
+</body>
+</html>
+
